@@ -1,0 +1,57 @@
+.congratulations {
+    width: 90%;
+    height: 50rem;
+    background-color: var(--color-blue-form);
+    padding: 1rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+    @include displayFlex(column, null, space-around, null);
+    border-radius: 20px;
+    box-shadow: 0 0.1rem 0.6rem 0 var(--color-blackbx);
+
+    h2 {
+        color: var(--color-text-sidebar);
+        font-family: var(--font-poppinsbold);
+        text-align: center;
+    }
+
+    p {
+        color: var(--color-text-sidebar);
+        width: 90%;
+        margin: 0 auto;
+        font-size: 1rem;
+        font-family: var(--font-poppinsbold);
+        text-align: center;
+    }
+    
+    .form {
+        @include displayFlex(column, null, null, center);
+        label span {
+            font-size: 1.2rem;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        label textarea {
+            outline: none;
+        }
+
+        &-btn {
+            @include displayFlex(column, null, center, center);
+            text-decoration: none;
+            color: white;
+            width: 9rem;
+            border: none;
+            border-bottom: .1rem solid var(--color-blue-form);
+            height: 2rem;
+            background-color: var(--color-blue-form);
+            font-family: var(--font-poppinsbold);
+            font-size: 1rem;
+            cursor: pointer;
+
+            &:hover {
+                border-bottom: .2rem solid var(--color-btn-form);
+            }
+        }
+    }
+}

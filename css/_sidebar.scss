@@ -1,0 +1,61 @@
+.sidebar {
+    @include displayFlex(column, null, null, null);
+
+    .wrap-box {
+        @include displayFlex(null, null, space-evenly, center);
+        background-color: var(--color-white-2);
+        height: 8rem;
+        width: 90%;
+        margin: 0 auto;
+        border-radius: 2rem;
+        margin-top: .7rem;
+        box-shadow: 0 0.1rem 0.3rem 0 var(--color-blackbx);
+
+        &-item {
+            width: 6.5rem;
+            height: 6.5rem;
+            background-color: var(--color-lightblue);
+            
+            border-radius: 50%;
+            @include displayFlex(null, null, center, center);        
+
+            img {
+                width: 4rem;
+            }
+        }
+
+        &-data {
+            h2 {
+                color: var(--color-text-sidebar);
+                font-size: 1.2rem;
+                font-family: var(--font-poppinsbold);
+            }
+
+            p {
+                color: var(--color-text-sidebar);
+                font-size: 1.5rem;
+                font-family: var(--font-amatic);
+            }
+
+            a {
+                width: 10rem;
+                @include displayFlex(null, null, null, center);   
+                text-decoration: none;
+                font-size: .9rem;
+                font-family: var(--font-poppinsbold);
+                color: var(--color-text-sidebar-btn);
+                border-bottom: .1rem solid var(--color-text-sidebar-btn-b);
+
+                img {
+                    margin-left: .3rem;
+                }
+
+                &:hover {
+                    font-weight: 600;
+                    border-bottom: .1rem solid var(--color-text-sidebar-btn-h);
+                }
+            }
+        }
+
+    }
+}

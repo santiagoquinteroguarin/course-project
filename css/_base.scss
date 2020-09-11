@@ -1,0 +1,63 @@
+html {
+    font-size: 62.5%;
+    list-style: none;
+
+    --color-background-primary: #F3F8FB;
+    --color-yellow-primary: #ffc400;
+
+    --font-poppins: 'poppins';
+    --font-poppinsbold: 'poppinsBold';
+    --font-amatic: 'amatic';
+
+    --color-blackbx: #20212447;
+    --color-white: #FFFFFF;
+    --color-white-1: #FFFFFF;
+    --color-white-2: #FFFFFF;
+    --color-black: #000000;
+    --color-blue-dark: darkblue;
+    --color-blue-form: #3A7AFF;
+    --color-grey: #dfe1e5;
+    --color-lightblue: lightblue;
+    --color-text-sidebar: #000000;
+
+    --color-text-sidebar-btn: #000000;
+    --color-text-sidebar-btn-b: transparent;
+    --color-text-sidebar-btn-h: rgb(255, 196, 0);
+    --box-shadow: 0 0.1rem 0.6rem 0 #20212447;
+    --color-i-h: rgb(255, 196, 0);
+    --color-hover: darkgreen;
+    --color-detail: rgb(255, 196, 0);
+    --color-i: #FFFFFF;
+    --color-btn-form: rgb(255, 196, 0);
+}
+
+html[data-theme='dark'] {
+    --color-background-primary: #11171E;
+    --color-yellow-primary: #161F29;
+
+    // ready
+    --color-lightblue: transparent;
+    --color-white-1: #231F29;
+    --color-white-2: #130e1a;
+    --color-text-sidebar: #FFFFFF;
+    --color-text-sidebar-btn: rgb(255, 196, 0);
+    --color-text-sidebar-btn-b: rgb(255, 196, 0);
+    --color-text-sidebar-btn-h: rgb(215, 216, 143);
+    --box-shadow: 0 0.1rem 0.1rem 0 #FFF;
+    --color-i-h: rgb(196, 11, 196);
+    --color-blue-dark: rgb(255, 196, 0);
+    --color-hover: rgb(196, 11, 196);
+    --color-detail: #FFFFFF;
+    --color-i: #000000;
+    --color-blue-form: #130e1a;
+    --color-btn-form: #ffffff;
+}
+
+body {
+    background-color: var(--color-background-primary);
+}
+
+.container {
+    width: auto;
+    height: auto;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html id="html" lang="es" data-theme='light'>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Santiago Quintero Guarin">
+    <meta name="description" content="Esta es una pagina donde podras aprender a vender mas facil">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" href="/assets/idea.svg">
+    <link rel="stylesheet" href="/css/main.css">
+    <title>Courses</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="wrap-header">
+            <div class="header">
+                <div class="wrap-logo">
+                    <img src="/assets/idea.svg" alt="imagen de un automovil - logo">
+                </div>
+                <nav class="navigation">
+                    <input type="checkbox" id="hamburger">
+                    <label for="hamburger" class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="mdi-window-close" width="20" 
+                    height="20" viewBox="0 0 24 24">
+                            <path d="M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z"/>
+                        </svg>
+                    </label>
+                    <ul class="nav-links">
+                        <li><a href="#" target="_blank">Explorar</a></li>
+                        <li><a href="/myCourses.html" target="_blank">Mis Cursos</a></li>
+                        <li><a href="/gallery.html" target="_blank">Galería</a></li>
+                        <li><a href="#" target="_blank">Perfil</a></li>
+                        <li>
+                            <label id="switch" class="switch">
+                                <input type="checkbox" onchange="toggleTheme()" id="slider">
+                                <span class="slider round"></span>
+                            </label>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <section class="courses">
+            <div class="item sidebar"></div>
+            <div class="item sidebar-art">
+
+                <div class="search">
+                    <span class="search-icon"></span>
+                    <input type="text" placeholder="Search">
+                </div>
+
+                <div class="congratulations">
+                    <h2>Completaste el curso de Planeación de ventas 100%</h2>
+                    <p>Completa la siguiente encuesta y cuéntanos que aprendiste del el curso</p>
+                    <form class="form" action="#">
+
+                        <label class="align" for="nombre">
+                            <span>¿Cuál es tu nombre?</span>
+                            <input class="width" type="text" name="nombre" id="nombre" autocomplete="name" required>
+                        </label><br>
+
+                        <label class="align" for="email">
+                            <span>Cuál es tu correo?</span>
+                            <input class="width" type="email" name="email" id="email" autocomplete="email" required>
+                        </label><br>
+
+                        <label class="align" for="inicio">
+                            <span>¿Fecha comienzo del el curso?</span>
+                            <input class="width" type="date" id="inicio">
+                        </label><br>
+
+                        <label class="align" for="horario">
+                            <span>¿En que horario estudias?</span>
+                            <input class="width" type="time" id="horario">
+                        </label><br>
+
+                        <label class="align" for="countries">
+                            <span>¿Cuál es tu pais?</span>
+                            <input class="width" list="countries" name="countries" required>
+                            <datalist id="countries">
+                                <option value="Colombia"></option>
+                                <option value="Mexico"></option>
+                                <option value="Argentina"></option>
+                                <option value="Brasil"></option>
+                            </datalist>
+                        </label><br>
+
+                        <label class="align" for="">
+                            <span>¿Que aprendiste con curso?</span>
+                            <textarea name="text" id="text" cols="22" rows="5" required></textarea>
+                        </label>
+                        <br>
+
+                        <input class="form-btn" type="submit" value="Enviar">
+                    </form>
+                </div>
+
+                <div class="completed">
+                    <h2>Cursos Completados: <strong>2 😎</strong></h2>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://kit.fontawesome.com/232e246375.js" crossorigin="anonymous"></script>
+    <script src="/js/card.js"></script>
+    <script src="/js/courses.js"></script>
+    <script src="/js/theme.js"></script>
+</body>
+</html>

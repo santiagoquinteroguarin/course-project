@@ -1,0 +1,20 @@
+@media (min-width: 1200px) {    
+    .courses {
+        width: 90%;
+        grid-template-columns: 23rem repeat(2, 1fr) 23rem;
+        grid-template-areas:
+        "sidebar item1 item2 sidebarart"
+        "sidebar item3 item4 sidebarart"
+        "sidebar item5 item6 sidebarart";
+
+        .sidebar-art {
+            display: flex;
+            flex-direction: column;
+            background-color: var(--color-white-1);
+            grid-column: 6 / 7;
+            grid-row: 1 / 6;
+            height: 100%;
+            grid-area: sidebarart;
+        }
+    }
+}

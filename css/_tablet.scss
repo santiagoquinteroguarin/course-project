@@ -1,0 +1,46 @@
+@media (min-width: 500px) {
+    .courses {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 800px) {
+    .courses {
+        grid-template-columns: 23rem repeat(2, 1fr);
+        grid-template-areas:
+        "sidebar item1 item2"
+        "sidebar item3 item4"
+        "sidebar item5 item6";
+
+        .sidebar {
+            grid-area: sidebar;
+            display: flex;
+            height: 100%;
+            background-color: var(--color-white-1);
+        }
+
+        .item-1 {
+            grid-area: item1;
+        }
+
+        .item-2 {
+            grid-area: item2;
+        }
+
+        .item-3 {
+           grid-area: item3;
+        }
+
+        .item-4 {
+            grid-area: item4;
+        }
+
+        .item-5 {
+            grid-area: item5;
+        }
+
+        .item-6 {
+            grid-area: item6;
+        }
+    }
+}

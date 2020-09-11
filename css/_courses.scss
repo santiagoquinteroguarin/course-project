@@ -1,0 +1,111 @@
+.courses {
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+    display: grid;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    grid-gap: 1rem;
+
+    .item {
+        height: 20rem;
+        border-radius: 2rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        background-color: var(--color-white-2);
+        box-shadow: var(--box-shadow);
+
+        &__data {
+            grid-column: 2 / 3;
+            @include displayFlex(column, null, space-evenly, null);
+
+            h2 {
+                color: var(--color-text-sidebar);
+                font-size: 1.4rem;
+                font-weight: bold;
+                font-family: var(--font-poppinsbold);
+            }
+
+            p {
+                color: var(--color-text-sidebar);
+                font-size: 2rem;
+                font-family: var(--font-amatic);
+            }
+
+            .container-btn {
+                position: relative;
+                @include displayFlex(row, wrap, null, null);     
+
+
+                .add {
+                    @include displayFlex(null, null, center, center);        
+                    text-decoration: none;
+                    color: var(--color-white);
+                    width: 7.5rem;
+                    height: 3rem;
+                    border-radius: 2rem;
+                    background-color: var(--color-blue-dark);
+                    font-family: var(--font-poppinsbold);
+                    font-size: 1rem;
+
+                    i {
+                        margin-right: .5rem;
+                    }
+                    
+                    &:hover {
+                        background-color: var(--color-i-h);
+                    }
+                }
+                
+                .info {
+                    position: relative;
+                    margin-left: .5rem;
+                    @include displayFlex(null, null, center, center);  
+                    width: 3rem;
+                    height: 3rem;
+                    background-color: var(--color-detail);
+                    border-radius: 50%;
+                    color: var(--color-i);
+
+                    &:hover {
+                        background-color: var(--color-hover);
+                    }
+                }
+            }
+        }
+
+        &__picture {
+            grid-row: 1 / 3;
+            @include displayFlex(null, null, center, center);
+        }
+
+        &__btn {
+            @include displayFlex(null, null, null, center);
+
+            a {
+                margin-right: 1rem;
+                width: 3rem;
+                height: 2rem;
+                border: none;
+
+                i {
+                    font-size: 1.6rem;
+                    color: var(--color-text-sidebar);
+
+                    &:hover {
+                        color: var(--color-i-h);
+                    }
+                }
+            }
+        }
+    }
+
+    .details {
+        display: none;
+    }
+
+    .sidebar-art,
+    .sidebar {
+        display: none;
+    }
+}

@@ -1,0 +1,29 @@
+@mixin displayFlex($flex-direction, $flex-wrap, $justify-content, $align-items){
+    display: flex;
+    flex-flow: $flex-direction $flex-wrap;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+.icon {
+    color: var(--color-icon);
+    margin-bottom: .3rem;
+    font-size: 1.8rem;
+}
+
+.align {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.width {
+    width: 100%;
+    height: 2rem;
+    border-radius: .5rem;
+    border: none;
+    box-shadow: 0 0.1rem 0.6rem 0 var(--color-blackbx);
+    cursor: pointer;
+    outline: none;
+}
+
+
